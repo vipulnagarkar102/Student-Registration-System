@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Student Registration System</title>
+</head>
+
+<body>
+    <h2 style="text-align: center;">Student Registration System</h2>
+    <p style=" text-align: center; align-items: center; line-height: 1.5;">This student registration system where students can register their details such as name,
+        class, address, and contact number.<br> Additionally, it provides functionalities for editing and
+        deleting records.</p>
+    <div class="container">
+        <div class="form-group">
+            <label for="studentName">Id</label>
+            <input type="text" id="studentId" placeholder="Enter student Id">
+        </div>
+        <div class="form-group">
+            <label for="studentName">Name</label>
+            <input type="text" id="studentName" placeholder="Enter student name">
+        </div>
+        <div class="form-group">
+            <label for="studentClass">Class</label>
+            <input type="text" id="studentClass" placeholder="Enter class">
+        </div>
+        <div class="form-group">
+            <label for="studentAddress">Address</label>
+            <input type="text" id="studentAddress" placeholder="Enter address">
+        </div>
+        <div class="form-group">
+            <label for="studentContact">Contact Number</label>
+            <input type="text" id="studentContact" placeholder="Enter contact number">
+        </div>
+        <div>
+            <button id="addStudentBtn">Add</button>
+        </div>
+        <div class="scrollable-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Class</th>
+                        <th>Address</th>
+                        <th>Contact</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="studentTableBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
